@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience</label>
+                <textarea id="experience" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="education">Education</label>
+                <textarea id="education" required></textarea>
+            </div>
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume-preview" class="resume hidden">
+            <h2 id="name-preview"></h2>
+            <p><strong>Email:</strong> <span id="email-preview"></span></p>
+            <p><strong>Phone:</strong> <span id="phone-preview"></span></p>
+            <p><strong>Address:</strong> <span id="address-preview"></span></p>
+            <h3>Skills</h3>
+            <p id="skills-preview"></p>
+            <h3>Experience</h3>
+            <p id="experience-preview"></p>
+            <h3>Education</h3>
+            <p id="education-preview"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
